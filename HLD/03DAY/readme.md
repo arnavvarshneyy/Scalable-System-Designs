@@ -75,7 +75,7 @@
     Cost	            ✅ Lower (fewer servers, no service mesh).	            ❌ Higher (more infra, orchestration tools).
 
 
-   5. Different phases of microservices
+    5. Different phases of microservices
       Decomposition (monolith service ko microservice mai kaise convert kroge)
       Database (shared db use karoge ki unshared db)
       Communication (communicate kaise krawoge different microservers ko )
@@ -83,7 +83,7 @@
       Observability(monitor kaise kroge deploy ke baad)
 
 
-   1.Decomposition
+    1.Decomposition
       1. by business logic 
       2. by subdomains
 
@@ -165,6 +165,7 @@
             Uber uses Sagas for ride matching (driver assignment → payment → notifications).
             Airbnb uses Sagas for booking (reserve → payment → confirm). 
   
+
 
 
 
