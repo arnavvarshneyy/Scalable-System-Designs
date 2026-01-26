@@ -76,16 +76,16 @@
 
 
    5. Different phases of microservices
-    .Decomposition (monolith service ko microservice mai kaise convert kroge)
-    .Database (shared db use karoge ki unshared db)
-    .Communication (communicate kaise krawoge different microservers ko )
-    .Deplyoment (deploy kaise karoge)
-    .Observability(monitor kaise kroge deploy ke baad)
+      Decomposition (monolith service ko microservice mai kaise convert kroge)
+      Database (shared db use karoge ki unshared db)
+      Communication (communicate kaise krawoge different microservers ko )
+      Deplyoment (deploy kaise karoge)
+      Observability(monitor kaise kroge deploy ke baad)
 
 
    1.Decomposition
-     -- by business logic 
-     -- by subdomains
+      1. by business logic 
+      2. by subdomains
 
 
     How will you do it (MONOLITH TO MICROSERVICE)
@@ -165,6 +165,7 @@
             Uber uses Sagas for ride matching (driver assignment → payment → notifications).
             Airbnb uses Sagas for booking (reserve → payment → confirm). 
   
+
 
 
 
