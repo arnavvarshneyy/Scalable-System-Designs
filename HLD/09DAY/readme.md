@@ -1,16 +1,16 @@
+ 
+    CACHE
+      Caching is a fundamental technique used to improve system performance by storing frequently accessed data in fast-access storage            layers. In high-level system design, caching plays a critical role in reducing latency, decreasing load on backend systems, and             improving overall user experience.
 
-  CACHE
-     Caching is a fundamental technique used to improve system performance by storing frequently accessed data in fast-access storage            layers. In high-level system design, caching plays a critical role in reducing latency, decreasing load on backend systems, and             improving overall user experience.
-
-  Common Cache Locations in System Architecture---
+    Common Cache Locations in System Architecture---
      Client-side Caching: Browser cache, mobile app cache
-    Content Delivery Network (CDN): Edge caching for static assets
-    Application-level Caching: In-memory caches (Redis, Memcached)
-    Database Caching: Query result caching, buffer pools
-    OS-level Caching: File system caching, page caching  
+     Content Delivery Network (CDN): Edge caching for static assets
+     Application-level Caching: In-memory caches (Redis, Memcached)
+     Database Caching: Query result caching, buffer pools
+     OS-level Caching: File system caching, page caching  
 
 
-  Cache Algorithms (Replacement Policies)
+   Cache Algorithms (Replacement Policies)
      When cache space is limited, these algorithms determine which items to evict:
 
     1. Least Recently Used (LRU) or Most recently used(reverse of LRU)
@@ -40,26 +40,26 @@
        Example: Web page caching
 
 
-    Cache Considerations in HLD
+     Cache Considerations in HLD
       Consistency Models:
       Strong consistency vs eventual consistency
       Cache invalidation strategies
 
-    Cache Size:
-     Too small: Low hit rate
-     Too large: Memory pressure, longer eviction times
+     Cache Size:
+      Too small: Low hit rate
+      Too large: Memory pressure, longer eviction times
 
-   Cache Key Design:
+     Cache Key Design:
       Proper namespace organization
       Avoiding hot keys
 
-   Distributed Caching:
-     Replication strategies
-     Partitioning/sharding approaches
-     Handling cache misses
+     Distributed Caching:
+       Replication strategies
+       Partitioning/sharding approaches
+       Handling cache misses
 
 
-   Read Policies--
+    Read Policies--
 
      1. Cache-Aside (Lazy Loading)
      Behavior: Application checks cache first, loads from DB if missing
@@ -92,5 +92,6 @@
      Pros: Avoids flooding cache with write-only data
      Cons: Subsequent reads will miss cache
      Use Case: Write-heavy data that's rarely read
+
 
 
