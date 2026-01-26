@@ -20,11 +20,11 @@
       Discretionary Access Control (DAC) - Resource owners set permissions
       Mandatory Access Control (MAC) - System-enforced policies
 
-   Key Differences----
-     Authentication    	Authorization
-     Verifies identity	Grants permissions
-     Comes first	        Comes after authn
-     "Who are you?"  	"What can you do?"
+              Key Differences--
+         Authentication    	Authorization
+       Verifies identity	Grants permissions
+       Comes first	        Comes after authn
+       "Who are you?"  	"What can you do?"
 
 
      One-Factor Authentication (Single-Factor)
@@ -260,4 +260,5 @@
      Managing small, simple systems
      Need direct user-resource mapping
      Working with traditional filesystems
+
 
