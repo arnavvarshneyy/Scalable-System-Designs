@@ -3,7 +3,7 @@
    QUESTION 1. DATABASE AND TYPES 
      A database is an organized collection of structured data stored electronically in a computer system. Databases allow for efficient         data management, storage, retrieval, and manipulation.
      DBMS is software that interacts with users to process data.
-     Main Types of Databases
+     Main Types of Databases--
     1. Relational Databases (RDBMS)
       Organize data into tables with rows and columns
       Use SQL (Structured Query Language) for queries
@@ -124,4 +124,5 @@
 
     //sharding
     Purpose: Horizontal partitioning of data across multiple databases
+
 
