@@ -2,13 +2,13 @@
 
 
     QUESTION 1. WHY HLD??
-    High-Level Design (HLD) is important because it provides a broad overview of a system’s architecture and components before detailed        implementation begins. HLD helps to:
+      High-Level Design (HLD) is important because it provides a broad overview of a system’s architecture and components before detailed        implementation begins. HLD helps to:
 
-    Define the system’s structure and main modules.
-    Identify major technologies, interfaces, and data flow.
-    Align stakeholders on the system’s approach and boundaries.
-    Reduce risks by exposing design flaws early.
-    Serve as a blueprint for Low-Level Design (LLD) and development.
+     Define the system’s structure and main modules.
+     Identify major technologies, interfaces, and data flow.
+     Align stakeholders on the system’s approach and boundaries.
+     Reduce risks by exposing design flaws early.
+     Serve as a blueprint for Low-Level Design (LLD) and development.
 
 
      QUESTION 2. CLIENT-SERVER MODEL OR REQUEST-RESPONSE MODEL
@@ -27,45 +27,45 @@
           .  SMTP/POP3/IMAP (Email)
           .  TCP/IP, UDP (General networking)
 
-   How It Works:
-    . The client sends a request (e.g., loading a webpage, fetching an email).
-    . The server processes the request and sends back a response (e.g., webpage data, email content).
-    . The client receives and displays/processes the response.
+     How It Works:
+     . The client sends a request (e.g., loading a webpage, fetching an email).
+     . The server processes the request and sends back a response (e.g., webpage data, email content).
+     . The client receives and displays/processes the response.
 
-   Advantages:
-    ✔ Centralized Management – Servers control access, security, and updates.
-    ✔ Scalability – Servers can handle multiple clients simultaneously.
-    ✔ Efficiency – Clients offload heavy processing to servers.
-
-   Disadvantages:
-    ✖ Single Point of Failure – If the server crashes, clients lose access. 
-    ✖ Network Dependency – Requires stable connectivity.
-    ✖ Server Overload – Too many clients can slow down performance.
+    Advantages:
+     ✔ Centralized Management – Servers control access, security, and updates.
+     ✔ Scalability – Servers can handle multiple clients simultaneously.
+     ✔ Efficiency – Clients offload heavy processing to servers.
+ 
+    Disadvantages:
+     ✖ Single Point of Failure – If the server crashes, clients lose access. 
+     ✖ Network Dependency – Requires stable connectivity.
+     ✖ Server Overload – Too many clients can slow down performance.
 
 
     QUESTION 3. HORIZONTAL SCALING AND VERTICAL SCALING
-    1. Horizontal Scaling (Scale-Out)
-    Definition: Adding more servers/nodes to distribute the workload.
+      1. Horizontal Scaling (Scale-Out)
+      Definition: Adding more servers/nodes to distribute the workload.
 
     How It Works:
      Instead of making a single server more powerful, multiple smaller servers work together.
      Uses load balancers to distribute requests across servers.
      Often implemented in cloud computing (e.g., AWS Auto Scaling, Kubernetes).
 
-   Pros:
-    ✔ High Availability – If one server fails, others take over.
-    ✔ Better Fault Tolerance – No single point of failure.
-    ✔ Handles Traffic Spikes – Easily add more servers when demand increases.
-    ✔ Cost-Effective for Cloud – Pay only for what you use.
-   Cons:
-    ✖ Increased Complexity – Requires distributed systems (e.g., databases, caching).
-    ✖ Network Overhead – Servers must communicate efficiently.
-    ✖ Software Must Be Stateless – Sessions must be managed externally (e.g., Redis).
+    Pros:
+     ✔ High Availability – If one server fails, others take over.
+     ✔ Better Fault Tolerance – No single point of failure.
+     ✔ Handles Traffic Spikes – Easily add more servers when demand increases.
+     ✔ Cost-Effective for Cloud – Pay only for what you use.
+    Cons:
+     ✖ Increased Complexity – Requires distributed systems (e.g., databases, caching).
+     ✖ Network Overhead – Servers must communicate efficiently.
+     ✖ Software Must Be Stateless – Sessions must be managed externally (e.g., Redis).
    
     Use Cases:
-    Web Applications (e.g., Netflix, Facebook)
-    Microservices Architectures
-    Big Data Processing (Hadoop, Spark)
+     Web Applications (e.g., Netflix, Facebook)
+     Microservices Architectures
+     Big Data Processing (Hadoop, Spark)
 
     2. Vertical Scaling (Scale-Up)
     Definition: Increasing the power of an existing server (CPU, RAM, storage).
@@ -100,17 +100,17 @@
      ✔ Fault Tolerance – The system continues working even if some nodes fail.
      ✔ Transparency – Users perceive the system as a single entity (e.g., Google Search).
 
-   Why Use Distributed Systems?
-    Scalability – Handle more load by adding more machines (horizontal scaling).
-    High Availability – If one node fails, others take over (fault tolerance).
-    Performance – Distribute computation closer to users (e.g., CDNs).
-    Geographic Distribution – Serve users worldwide with low latency.
+     Why Use Distributed Systems?
+      Scalability – Handle more load by adding more machines (horizontal scaling).
+      High Availability – If one node fails, others take over (fault tolerance).
+      Performance – Distribute computation closer to users (e.g., CDNs).
+      Geographic Distribution – Serve users worldwide with low latency.
 
 
-    QUESTION 4. NETWORK COMMUNICATION AND NETWORK PROTOCOLS
-     Network communication refers to the exchange of data between devices (computers, servers, IoT devices, etc.) over a network. This          communication is governed by network protocols, which are standardized rules that define how data is transmitted, received, and            processed.
+     QUESTION 4. NETWORK COMMUNICATION AND NETWORK PROTOCOLS
+       Network communication refers to the exchange of data between devices (computers, servers, IoT devices, etc.) over a network. This           communication is governed by network protocols, which are standardized rules that define how data is transmitted, received, and            processed.
 
-     Protocols ensure structured and reliable communication. They are often organized into layers (as in the OSI and TCP/IP models).
+      Protocols ensure structured and reliable communication. They are often organized into layers (as in the OSI and TCP/IP models).
 
      A. OSI Model (7 Layers)
 
@@ -146,5 +146,6 @@
     UDP (User Datagram Protocol)
         Connectionless, fast but unreliable (no retransmission).
         Used in video streaming (VoIP, YouTube), DNS queries, online gaming.
+
 
 
