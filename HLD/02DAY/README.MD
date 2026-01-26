@@ -1,24 +1,23 @@
 
 
-   // QUESTION 1. DATABASE AND TYPES 
-   //ANSWER
-   A database is an organized collection of structured data stored electronically in a computer system. Databases allow for efficient data    management, storage, retrieval, and manipulation.
-   DBMS is software that interacts with users to process data.
-   Main Types of Databases
-   1. Relational Databases (RDBMS)
-     Organize data into tables with rows and columns
-     Use SQL (Structured Query Language) for queries
-     Enforce ACID properties (Atomicity, Consistency, Isolation, Durability)
-     Examples: MySQL, PostgreSQL, Oracle, Microsoft SQL Server, SQLite
+   QUESTION 1. DATABASE AND TYPES 
+     A database is an organized collection of structured data stored electronically in a computer system. Databases allow for efficient         data management, storage, retrieval, and manipulation.
+     DBMS is software that interacts with users to process data.
+     Main Types of Databases
+    1. Relational Databases (RDBMS)
+      Organize data into tables with rows and columns
+      Use SQL (Structured Query Language) for queries
+      Enforce ACID properties (Atomicity, Consistency, Isolation, Durability)
+      Examples: MySQL, PostgreSQL, Oracle, Microsoft SQL Server, SQLite
 
-   2. NoSQL Databases
-     Designed for unstructured or semi-structured data
-     More flexible schema than relational databases
-     Types:
-        Document Databases: Store data in JSON-like documents (MongoDB, CouchDB)
-        Key-Value Stores: Simple pairs of keys and values (Redis, DynamoDB)
-        Column-Family Stores: Organize data in columns rather than rows (Cassandra, HBase)
-        Graph Databases: Store data in nodes and edges (Neo4j, Amazon Neptune)
+    2. NoSQL Databases
+      Designed for unstructured or semi-structured data
+      More flexible schema than relational databases
+      Types:
+         Document Databases: Store data in JSON-like documents (MongoDB, CouchDB)
+         Key-Value Stores: Simple pairs of keys and values (Redis, DynamoDB)
+         Column-Family Stores: Organize data in columns rather than rows (Cassandra, HBase)
+         Graph Databases: Store data in nodes and edges (Neo4j, Amazon Neptune)
 
 
     //QUESTION2. WHICH DATABSE TO USE HOW TO DEDCIDE??
@@ -125,3 +124,4 @@
 
     //sharding
     Purpose: Horizontal partitioning of data across multiple databases
+
