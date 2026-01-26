@@ -10,7 +10,7 @@
      OS-level Caching: File system caching, page caching  
 
 
-   Cache Algorithms (Replacement Policies)
+    Cache Algorithms (Replacement Policies)
      When cache space is limited, these algorithms determine which items to evict:
 
     1. Least Recently Used (LRU) or Most recently used(reverse of LRU)
@@ -92,6 +92,7 @@
      Pros: Avoids flooding cache with write-only data
      Cons: Subsequent reads will miss cache
      Use Case: Write-heavy data that's rarely read
+
 
 
 
