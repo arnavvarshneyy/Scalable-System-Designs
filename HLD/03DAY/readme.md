@@ -36,19 +36,19 @@
            AP     Always available, tolerates partitions   May return stale data during partitions	Cassandra, DynamoDB , Riak
 
 
-   2. Availability Numbers
-      Availability is a critical metric in distributed systems, measured as the percentage of time a system is operational over a given          period. It’s often expressed as "nines" (e.g., 99.9%, "three nines").
-      Availability Tiers (The "Nines")
-     Availability (%)	Downtime per Year	  Tier Name	Use Cases
-     90% (1 nine)     	~36.5 days	Basic	    Non-critical internal tools
-     99% (2 nines)	    ~3.65 days	Moderate	Small business apps
-     99.9% (3 nines)	    ~8.76 hours	High	    E-commerce, SaaS
-     99.99% (4 nines)	~52.6 minutes	        Mission-critical	Cloud providers (AWS, Azure)
-     99.999% (5 nines)	~5.26 minutes	        Fault-tolerant	Telecom, financial systems
-     99.9999% (6 nines)	~31.5 seconds	        Ultra-reliable	Air traffic control, nuclear systems
+    2. Availability Numbers
+        Availability is a critical metric in distributed systems, measured as the percentage of time a system is operational over a given          period. It’s often expressed as "nines" (e.g., 99.9%, "three nines").
+                Availability Tiers (The "Nines")
+       Availability (%)	Downtime per Year	  Tier Name	Use Cases
+       90% (1 nine)     	~36.5 days	Basic	    Non-critical internal tools
+       99% (2 nines)	    ~3.65 days	Moderate	Small business apps
+       99.9% (3 nines)	    ~8.76 hours	High	    E-commerce, SaaS
+       99.99% (4 nines)	~52.6 minutes	        Mission-critical	Cloud providers (AWS, Azure)
+       99.999% (5 nines)	~5.26 minutes	        Fault-tolerant	Telecom, financial systems
+       99.9999% (6 nines)	~31.5 seconds	        Ultra-reliable	Air traffic control, nuclear systems
 
-     calculate:
-     Availability=(1−DowntimeTotal Time)×100%
+      calculate:
+        Availability=(1−DowntimeTotal Time)×100%
 
 
 
@@ -59,7 +59,7 @@
        ✔ Identify bottlenecks before deep diving
 
 
-   4. MONOLITH AND MICROSERVICE
+    4. MONOLITH AND MICROSERVICE
 
 	                             Monolithic Architecture       	                  Microservices Architecture
     Definition	         Single, unified codebase handling all functions.  	     Decoupled services,each with specific purpose.
@@ -75,17 +75,17 @@
     Cost	            ✅ Lower (fewer servers, no service mesh).	            ❌ Higher (more infra, orchestration tools).
 
 
-  5. Different phases of microservices
-   .Decomposition (monolith service ko microservice mai kaise convert kroge)
-   .Database (shared db use karoge ki unshared db)
-   .Communication (communicate kaise krawoge different microservers ko )
-   .Deplyoment (deploy kaise karoge)
-   .Observability(monitor kaise kroge deploy ke baad)
+   5. Different phases of microservices
+    .Decomposition (monolith service ko microservice mai kaise convert kroge)
+    .Database (shared db use karoge ki unshared db)
+    .Communication (communicate kaise krawoge different microservers ko )
+    .Deplyoment (deploy kaise karoge)
+    .Observability(monitor kaise kroge deploy ke baad)
 
 
   1.Decomposition
-    -- by business logic 
-    -- by subdomains
+     -- by business logic 
+     -- by subdomains
 
 
     How will you do it (MONOLITH TO MICROSERVICE)
@@ -165,4 +165,5 @@
             Uber uses Sagas for ride matching (driver assignment → payment → notifications).
             Airbnb uses Sagas for booking (reserve → payment → confirm). 
   
+
 
