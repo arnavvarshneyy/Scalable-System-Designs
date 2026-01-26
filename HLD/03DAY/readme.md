@@ -83,7 +83,7 @@
     .Observability(monitor kaise kroge deploy ke baad)
 
 
-  1.Decomposition
+   1.Decomposition
      -- by business logic 
      -- by subdomains
 
@@ -165,5 +165,6 @@
             Uber uses Sagas for ride matching (driver assignment → payment → notifications).
             Airbnb uses Sagas for booking (reserve → payment → confirm). 
   
+
 
 
