@@ -2,14 +2,14 @@
     Rate Limiting: Concepts, Algorithms, and Implementation
       Rate limiting controls how often a user, service, or API can make requests within a specified time window. It prevents abuse, ensures       fair usage, and protects systems from overload (e.g., DDoS attacks).
 
-   1. Why Use Rate Limiting?
+    1. Why Use Rate Limiting?
       ✅ Prevents API abuse (e.g., brute-force attacks, scraping)  
       ✅ Protects backend services from being overwhelmed
       ✅ Ensures fair usage among clients
       ✅ Helps manage quotas (e.g., free vs. premium API tiers)
 
-   2. Common Rate Limiting Algorithms
-    A. Fixed Window (Simple Counter)
+    2. Common Rate Limiting Algorithms
+     A. Fixed Window (Simple Counter)
       How it works:
             Limits requests per fixed time window (e.g., "100 requests per minute").
             Resets counter after the window expires.
@@ -63,3 +63,4 @@
       Sliding Counter	Balanced approach       ✅ Yes	     Medium
       Token Bucket	Bursty traffic	          ✅ Yes	     Medium
       Leaky Bucket	Smoothing traffic	        ❌ No	       Medium
+
