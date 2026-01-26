@@ -27,25 +27,25 @@
      "Who are you?"  	"What can you do?"
 
 
-   One-Factor Authentication (Single-Factor)
-   Definition: Uses only one method to verify identity (typically "something you know" like a password).
+     One-Factor Authentication (Single-Factor)
+     Definition: Uses only one method to verify identity (typically "something you know" like a password).
  
-   [User] → [Enter Password] → [System] → [Access Granted]
-   Diagram:
+     [User] → [Enter Password] → [System] → [Access Granted]
+     Diagram:
      ┌─────────────┐     ┌─────────────┐    ┌─────────────┐
      │             │     │             │    │             │
      │    User     │───▶ │  Password  │───▶│   System    │
      │             │     │ (1 Factor)  │    │             │
      └─────────────┘     └─────────────┘    └─────────────┘
-   Multi-Factor Authentication (MFA)
-   Definition: Requires two or more independent credentials from these categories:
+     Multi-Factor Authentication (MFA)
+     Definition: Requires two or more independent credentials from these categories:
 
-   Something you know (password, PIN)
-   Something you have (phone, security token) 
-   Something you are (fingerprint, facial recognition)
+     Something you know (password, PIN)
+     Something you have (phone, security token) 
+     Something you are (fingerprint, facial recognition)
 
-   [User] → [Enter Password] → [Enter SMS Code] → [System] → [Access Granted]
-   Diagram:
+     [User] → [Enter Password] → [Enter SMS Code] → [System] → [Access Granted]
+     Diagram:
     ┌─────────────┐       ┌───────────────────┐    ┌─────────────┐
     │             │       │                   │    │             │
     │    User     │───▶  │    Password       │ ───▶│  System     │
@@ -70,11 +70,11 @@
      Compliance            Basic	            Required for many regulations
 
 
-    Session Management Overview
-     Session management tracks a user's interactions with a system across multiple requests. The approach differs significantly between         stateful and stateless architectures.
+      Session Management Overview
+        Session management tracks a user's interactions with a system across multiple requests. The approach differs significantly between          stateful and stateless architectures.
 
 
-    Stateful Session Management
+     Stateful Session Management
      Characteristics:
        Server maintains session state
        Session data stored in memory or database
@@ -103,34 +103,34 @@
     Single point of failure
     Server affinity required (hard to load balance)
 
-   Stateless Session Management--
-   Characteristics:
-    No server-side session storage
-    Client contains all necessary auth/session data
-    Typically uses signed tokens (JWT)
+    Stateless Session Management--
+     Characteristics:
+      No server-side session storage
+      Client contains all necessary auth/session data
+      Typically uses signed tokens (JWT)
 
-   Flow:-
+    Flow:-
      1. User Login → Server validates → Returns signed token
      2. Client stores token → Includes in subsequent requests
      3. Server verifies token signature → Processes request
-   Diagram:
+    Diagram:
     ┌─────────┐    ┌─────────┐
     │         │    │         │
     │ Client  │───▶│ Server  │
     │ (Stores │    │ (Verifies│
     │  Token) │    │  Token) │
     └─────────┘    └─────────┘
-   Pros:
-   Excellent scalability
-   No server affinity needed
-   Works well with microservices
+    Pros:
+     Excellent scalability
+     No server affinity needed
+     Works well with microservices
 
-   Cons:
-   Token revocation challenges
-   Larger request size
-   All session data must fit in token
+    Cons:
+     Token revocation challenges
+     Larger request size
+     All session data must fit in token
 
-    Key Differences 
+                         Key Differences 
      Aspect                   	Stateful	             Stateless
     Session Storage         	Server-side	            Client-side (token)
     Scalability	                Limited	              Excellent
@@ -260,3 +260,4 @@
      Managing small, simple systems
      Need direct user-resource mapping
      Working with traditional filesystems
+
